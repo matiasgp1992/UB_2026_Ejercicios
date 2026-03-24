@@ -6,13 +6,16 @@
 def calcular_area(base, altura):
     res = base * altura
     print(res)
-    
+
     return res
 
 ##################
 #   EJERCICIO 2  #
 ##################
-
+try:
+    conectar()
+except Exception as e:
+    print(f"Error al conectar: {e}")
 
 ##################
 #   EJERCICIO 3  #
